@@ -1,0 +1,37 @@
+.dropdown_panel{
+    display: flex;
+    margin-top: 45px;
+    background-color: #fff;
+}
+
+.discover{
+    display: flex;
+    align-items: top;
+    width: 100vw;
+    gap: 45px;
+    margin-left: 24vw;
+}
+.discover ol{
+    font-size: 14px;
+    list-style-type: none;
+    text-align: left;
+}
+.discover ul{
+    margin-top: 18px;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.discover li{
+    
+    padding-bottom: 6px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    text-align: left;
+    font-size: 14px;
+}
+
+.discover a{
+    text-decoration: none;
+    color: black;
+}

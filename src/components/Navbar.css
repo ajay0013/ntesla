@@ -1,0 +1,188 @@
+.Navbar{
+    width: 100vw;
+    z-index: 15;
+    position: fixed;
+}
+
+.navbar_header{
+    background:none;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 100vw;
+    height: 56px;
+}
+
+.tesla_logo{
+    width:min-content;
+    margin-left: 20px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    font-size: 14px;
+
+    .t_logo{
+        color: aliceblue;
+    }
+}
+
+.navbar_options{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:auto;
+    padding: 5px;
+
+    .nav_btn_txt{
+        color: aliceblue;
+    }
+}
+
+.navbar_options li {
+    list-style: none;
+    margin: 5px;
+}
+
+.nav_btn{
+    position: relative;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.navbar_logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.navbar_logo{
+    margin: 5px;
+    background: none;
+    background-color: #fff;      /* TODO: isko remove krna h proper color ke button laane ke baad */
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.navbar_logos li{
+    list-style: none;
+}
+
+
+/*********         Dropdown     **********/
+.drop_vehicles{
+    display: none;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: rgb(255, 255, 255);
+    min-height: min-content;
+    height: 59vh;
+    position: absolute;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+#nav_vehicle_btn:hover {.drop_vehicles{
+    display: block;
+}}
+
+.drop_vehicles::-webkit-scrollbar {
+    display: none;
+}
+
+.drop_energy{
+    display: none;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: rgb(255, 255, 255);
+    min-height: min-content;
+    height: 59vh;
+    position: absolute;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+#nav_energy_btn:hover .drop_vehicles{
+    display: block;
+}
+
+.drop_energy::-webkit-scrollbar {
+    display: none;
+}
+
+.drop_charging{
+    display: none;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: rgb(255, 255, 255);
+    min-height: min-content;
+    height: 59vh;
+    position: absolute;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+#nav_charging_btn:hover .drop_vehicles{
+    display: block;
+}
+
+.drop_charging::-webkit-scrollbar {
+    display: none;
+}
+
+.drop_discover{
+    display: none;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: rgb(255, 255, 255);
+    min-height: min-content;
+    height: 59vh;
+    position: absolute;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+#nav_discover_btn:hover .drop_vehicles{
+    display: block;
+}
+
+.drop_discover::-webkit-scrollbar {
+    display: none;
+}
+
+
+.drop_shop{
+    display: none;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: rgb(255, 255, 255);
+    min-height: min-content;
+    height: 59vh;
+    position: absolute;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+#nav_shop_btn:hover .drop_vehicles{
+    display: block;
+}
+
+.drop_shop::-webkit-scrollbar {
+    display: none;
+}

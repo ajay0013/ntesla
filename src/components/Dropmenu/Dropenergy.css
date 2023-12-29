@@ -1,0 +1,52 @@
+.dropdown_panel{
+    display: flex;
+    margin-top: 45px;
+    background-color: #fff;
+}
+
+img{
+    height: 6rem;
+    width: 10rem;
+}
+
+.energy{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    height:25vh;
+    width: 53rem;
+    margin-left: 4.5vw;
+}
+
+.ed_options ul{
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.ed_options li{
+    padding-bottom: 6px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    text-align: left;
+    font-size: 14px;
+}
+
+.ed_options a{
+    text-decoration: none;
+    color: black;
+}
+
+#energydevice{
+    flex: 0 0 auto;
+}
+
+#ed_link{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    gap: 17px;
+    margin: -9px;
+    font-size: 12.3px;
+    text-decoration: underline;
+}

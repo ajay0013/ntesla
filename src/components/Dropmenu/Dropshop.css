@@ -1,0 +1,23 @@
+.dropdown_panel{
+    display: flex;
+    margin-top: 45px;
+}
+
+img{
+    height: 6rem;
+    width: 10rem;
+}
+
+.shop{
+    margin-left: 24vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    height:25vh;
+    width: 100vw;
+    margin-left: 19vw;
+}
+
+#dropshop{
+    flex: 0 0 auto;
+}
