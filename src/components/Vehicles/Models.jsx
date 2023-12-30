@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import "./Models.css";
 import model_s_1 from "./Vehicleimages/model_s_1.jpg";
 import model_s_2 from "./Vehicleimages/model_s_2.jpg";
@@ -10,9 +11,17 @@ import elem_img_1 from "./Vehicleimages/elem_img_1.jpg";
 import elem_img_2 from "./Vehicleimages/elem_img_2.jpg";
 import elem_img_3 from "./Vehicleimages/elem_img_3.jpg";
 import model_s_blue from "./Vehicleimages/model_s_blue.jpg";
+import model_s_ep from "./Vehicleimages/model_s_ep.jpg";
+import model_s_plaid_ep from "./Vehicleimages/model_s_plaid_ep.jpg";
 
 
 export default function Models() {
+
+  const [image, setImage] = useState(model_s_ep);
+
+  const changeImage = (imageFile) => {
+    setImage(imageFile);
+  };
 
   return (
     <div className="model-s-frontend">                                                {/*      Page   */}
@@ -185,30 +194,79 @@ export default function Models() {
         </div>
       </div>
 
-      <div className="section" id="beyond_ludicrous">
-        <div className="pic_specs">
-          <div className="s_blue_img">
-            <img src={model_s_blue} alt="model_s_blue"/>
+      <div className="section" id="beyond_ludicrous" style={{ backgroundImage: `url(${model_s_blue})` }}>
+        <div className="pic_specs" >
 
-            <div className="text" id="specs">
-              <div className="peak_power">
+          <div className="text" id="specs">
+            <div className="spec_numbers">
+              <div className="peak_power" id="number">
                 <p1>1,020 hp</p1>
                 <p2>Peak Power</p2>
               </div>
 
-              <div className="mile">
+              <div className="mile" id="number">
                 <p1>9.23 s</p1>
                 <p2>@250 km/h 1/4 mile</p2>
               </div>
 
-              <div className="zero_hund">
+              <div className="zero_hund" id="number">
                 <p1>2.1 s</p1>
                 <p2>0-100 km/h*</p2>
               </div>
             </div>
-
           </div>
+
+          <div className="btn_dscrb">
+            <div className="btn">
+              <div className="name">
+                <p1>Plaid</p1>
+                <p2>Beyond Ludicrous</p2>
+              </div>
+              <div className="btns">
+                <button>
+                  <a href="">Order Now</a>
+                </button>
+                <button>
+                  <a href="">View Inventory</a>
+                </button>
+              </div>
+            </div>
+
+            <div className="dscrb">
+              <p>Model S Plaid has the quickest acceleration 
+                of any vehicle in production. Updated battery 
+                architecture for all Model S trims enables 
+                back-to-back track runs without performance 
+                degradation.</p>
+            </div>
+          </div>
+
         </div>
+      </div>
+
+      <div className="section" id="electric_powertrain">
+
+        <div className="ep_text">
+          <p1>Electric Powertrain</p1>
+          <p2>Model S platforms unite powertrain and battery 
+            technologies for unrivaled performance, range and efficiency. 
+            New module and pack thermal architecture allows faster charging 
+            and gives you more power and endurance in all conditions.</p2>
+        </div>
+
+        <div className="ep_mtr_btn">
+
+          <div className="mp_mtr">
+            <img id="image" src={image} alt="ep_mtr" />
+          </div>
+
+          <div className="ep_btn">
+            <button onClick={() => changeImage(model_s_ep)}>First Image</button>
+            <button onClick={() => changeImage(model_s_plaid_ep)}>Second Image</button>
+          </div>
+
+        </div>
+
       </div>
     </div>
   );

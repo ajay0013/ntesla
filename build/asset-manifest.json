@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fc3385d4.css",
+    "main.js": "/static/js/main.dd508858.js",
+    "static/js/787.5af16732.chunk.js": "/static/js/787.5af16732.chunk.js",
+    "static/media/modely.jpg": "/static/media/modely.0e2b2f57459cfb6713db.jpg",
+    "static/media/elem_img_2.jpg": "/static/media/elem_img_2.182ef0f2eda5c0840848.jpg",
+    "static/media/model_s_1.jpg": "/static/media/model_s_1.cbefd28bc0b21bb277a9.jpg",
+    "static/media/model_s_video_1.mp4": "/static/media/model_s_video_1.fb7ca4a7d0747871b92a.mp4",
+    "static/media/solarroof.jpg": "/static/media/solarroof.6084c803e77b9643bef6.jpg",
+    "static/media/models.jpg": "/static/media/models.528c6a0fc37b1c8e0fc2.jpg",
+    "static/media/model_s_video_4.mp4": "/static/media/model_s_video_4.ba38071fe61d7e06c5bb.mp4",
+    "static/media/solarpanel.jpg": "/static/media/solarpanel.96fa3914469ac9639587.jpg",
+    "static/media/model3.jpg": "/static/media/model3.2bf7983ab897d59534f9.jpg",
+    "static/media/model_s_video_3.mp4": "/static/media/model_s_video_3.be0a6927415084472350.mp4",
+    "static/media/powerwall.jpg": "/static/media/powerwall.3f39b51570bc6b89fea5.jpg",
+    "static/media/model_s_video_2.mp4": "/static/media/model_s_video_2.017e22e0ad3ff894a126.mp4",
+    "static/media/cybertruck.jpg": "/static/media/cybertruck.040ea3d42ff4f1070022.jpg",
+    "static/media/modelx.jpg": "/static/media/modelx.572a06909b310fcce73a.jpg",
+    "static/media/accessories.jpg": "/static/media/accessories.2df7c0ed95252a69347e.jpg",
+    "static/media/model_s_blue.jpg": "/static/media/model_s_blue.8f3beb7bf8e53d2a7e72.jpg",
+    "static/media/experience.jpg": "/static/media/experience.55335e625e8b538a297d.jpg",
+    "static/media/model_s_2.jpg": "/static/media/model_s_2.4dc02bfbd352fbe74e7f.jpg",
+    "static/media/elem_img_3.jpg": "/static/media/elem_img_3.8a501a5294980ca74583.jpg",
+    "static/media/elem_img_1.jpg": "/static/media/elem_img_1.9974e1b2102e1cbf399c.jpg",
+    "index.html": "/index.html",
+    "main.fc3385d4.css.map": "/static/css/main.fc3385d4.css.map",
+    "main.dd508858.js.map": "/static/js/main.dd508858.js.map",
+    "787.5af16732.chunk.js.map": "/static/js/787.5af16732.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc3385d4.css",
+    "static/js/main.dd508858.js"
+  ]
+}
