@@ -75,9 +75,7 @@ export default function Models() {
 
       </div>
 
-      <div className="section" id="section-3">
-       <img src = {model_s_2} alt="model_s_2" />
-      </div>
+      <div className="section" id="section-3" style={{ backgroundImage: `url(${model_s_2})` }} /> 
 
       <div className="empty_space"></div>
 
@@ -247,22 +245,61 @@ export default function Models() {
       <div className="section" id="electric_powertrain">
 
         <div className="ep_text">
-          <p1>Electric Powertrain</p1>
-          <p2>Model S platforms unite powertrain and battery 
-            technologies for unrivaled performance, range and efficiency. 
-            New module and pack thermal architecture allows faster charging 
-            and gives you more power and endurance in all conditions.</p2>
+          <div className="txt">
+            <p1>Electric Powertrain</p1>
+            <p2>Model S platforms unite powertrain and battery 
+              technologies for unrivaled performance, range and efficiency. 
+              New module and pack thermal architecture allows faster charging 
+              and gives you more power and endurance in all conditions.</p2>
+          </div>
         </div>
 
         <div className="ep_mtr_btn">
 
-          <div className="mp_mtr">
-            <img id="image" src={image} alt="ep_mtr" />
+          <div className="ep_mtr">
+            <img className="ep_mtr_img" id="image" src={image} alt="ep_mtr" />
           </div>
 
-          <div className="ep_btn">
-            <button onClick={() => changeImage(model_s_ep)}>First Image</button>
-            <button onClick={() => changeImage(model_s_plaid_ep)}>Second Image</button>
+          <div className="btns">
+            <div className="ep_btn">
+
+              <button id="ep_btn_1" onClick={() => changeImage(model_s_ep)}>
+                <p1>Model S</p1>
+                <p2>Dual Motor All-Wheel Drive unlocks more range than any other vehicle 
+                  in our current lineup, with insane power and maximum control.</p2>
+                <div className="specs">
+
+                  <div className="specs_time">
+                    <p1>3.2 s</p1>
+                    <p2>0-100 km/h</p2>
+                  </div>
+
+                  <div className="specs_range">
+                    <p1>652 km</p1>
+                    <p2>Range (EPA est.)</p2>
+                  </div>
+
+                </div>
+              </button>
+              <button id="ep_btn_2" onClick={() => changeImage(model_s_plaid_ep)}>
+              <p1>Model S Plaid</p1>
+                <p2>Maintain 1,000+ horsepower all the way to 322 km/h with Tri-Motor 
+                  All-Wheel Drive, featuring torque vectoring and three independent 
+                  carbon-sleeved rotors.</p2>
+                <div className="specs">
+
+                  <div className="specs_time">
+                    <p1>2.1 s*</p1>
+                    <p2>0-100 km/h</p2>
+                  </div>
+
+                  <div className="specs_range">
+                    <p1>637 km</p1>
+                    <p2>Range (EPA est.)</p2>
+                  </div>
+                </div>
+              </button>
+            </div>
           </div>
 
         </div>

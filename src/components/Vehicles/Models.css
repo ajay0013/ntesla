@@ -40,8 +40,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 540px;
-    height: 80vh;
+    height: 90vh;
     margin-top: 75px;
 }
 
@@ -50,7 +49,6 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    margin-top: 105px;
 }
 
 .model-spec-numbers{
@@ -128,8 +126,10 @@
     background-color: #000000;
 
     img{
+        display: flex;
+        flex-wrap: wrap;
         width: 100vw;
-        height: 861px;
+        height: auto;
     }
 }
 
@@ -156,12 +156,15 @@
 .text_item{
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    /* padding: 15px; */
+    text-align: center;
 
     .text{
         display: flex;
         flex-direction: column;
+        padding-left: 0;
         align-items: center;
+        text-align: center;
 
         p1{
             color: aliceblue;
@@ -188,7 +191,7 @@
 
     .vid_txt{
         padding: 25px;
-
+        text-align: center;
         p{
             font-weight: lighter;
         }
@@ -363,5 +366,130 @@
     p{
         font-weight: lighter;
         font-size: 16px;
+    }
+}
+
+
+#electric_powertrain{
+    width: 100vw;
+    height: 1357px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+}
+
+.ep_text{
+    width: 100vw;
+    height: 151px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    .txt{
+        height: 151px;
+        width: 60vw;
+        /* align-items: ; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: left;
+
+        p1{
+            font-size: 26px;
+        }
+
+        p2{
+            width: 45vw;
+            font-weight: lighter;
+            font-size: 15px;
+            padding-top: 25px;
+        }
+    }
+}
+
+.ep_mtr_btn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ep_mtr{
+    width: 100vw;
+    height: 811px;
+    overflow-x: hidden;
+
+    img{
+        height: 100%;
+        width: 80%;
+        object-fit: contain;
+    }
+}
+
+.ep_mtr_btn{
+    .btns{
+        justify-content: center;
+        margin-top: -55px;
+    }
+}
+
+.ep_btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 66vw;
+    height: 322px;
+    justify-content: space-between;
+
+    button{
+        height: 200px;
+        width: 32vw;
+        background: none;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        p1{
+            font-weight: 550;
+            font-size: 16px;
+            padding: 15px;
+            padding-bottom: 0;
+            text-align: left;
+        }
+
+        p2{
+            padding: 15px;
+            font-size: 12px;
+            text-align: left;
+        }
+        .specs{
+            display: flex;
+            padding-top: 15px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 25px;
+
+            p1{
+                font-size: 22px;
+                font-weight: normal;
+            }
+
+            .specs_time{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .specs_range{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    button:hover{
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        transform: translateY(-2px);
     }
 }
